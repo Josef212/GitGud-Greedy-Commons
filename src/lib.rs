@@ -1,3 +1,5 @@
+pub mod dtos;
+
 use std::str::FromStr;
 use std::io::Write;
 use chrono::Local;
