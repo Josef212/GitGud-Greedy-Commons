@@ -3,7 +3,7 @@ on: [push]
 jobs:
   check:
     name: Ceck
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
         uses: actions/checkout@v3
