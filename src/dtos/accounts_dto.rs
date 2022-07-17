@@ -10,5 +10,5 @@ pub struct AccountDto {
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct AccountsResponse {
-    pub payrolls: Vec<AccountDto>,
+    pub accounts: Vec<AccountDto>,
 }
