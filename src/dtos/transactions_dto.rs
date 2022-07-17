@@ -2,6 +2,7 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize, Debug, Default)]
 pub struct TransactionDto {
+    pub _id: i32,
     pub name: String,
     pub date: String,
     pub amount: f32,
