@@ -9,7 +9,7 @@ pub struct PayrollDto {
     pub ss: f32,
     pub irpf: f32,
     pub company_id: i32,
-    pub category_if: i32,
+    pub category_id: i32,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
