@@ -7,6 +7,12 @@ pub struct NamesIdsDto {
     pub names_to_ids: HashMap<String, u32>,
 }
 
+#[derive(Serialize, Deserialize)]
+pub struct ExtraDataDto {
+    pub companies: NamesIdsDto,
+    pub categories: NamesIdsDto,
+}
+
 impl NamesIdsDto {
     pub fn name_from_id(&self, id: u32) -> String {
         match self.ids_to_names.get(&id) {
