@@ -11,6 +11,7 @@ pub struct NamesIdsDto {
 pub struct ExtraDataDto {
     pub companies: NamesIdsDto,
     pub categories: NamesIdsDto,
+    pub tags: NamesIdsDto,
 }
 
 impl NamesIdsDto {
