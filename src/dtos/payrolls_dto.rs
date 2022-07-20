@@ -15,4 +15,10 @@ pub struct PayrollDto {
 #[derive(Serialize, Deserialize, Debug)]
 pub struct PayrollsResponse {
     pub payrolls: Vec<PayrollDto>,
+    pub gross_total: f32,
+    pub net_total: f32,
+    pub ss_total: f32,
+    pub irpf_total: f32,
+    
+    // TODO: Per company and category data
 }
