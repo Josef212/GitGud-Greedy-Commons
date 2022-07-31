@@ -1,3 +1,4 @@
+use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize, Debug, Default)]
@@ -12,4 +13,6 @@ pub struct TransactionDto {
 #[derive(Serialize, Deserialize, Debug)]
 pub struct TransactionsResponse {
     pub transactions: Vec<TransactionDto>,
+    pub total: f32,
+    pub tag_data: HashMap<i32, f32>,
 }
