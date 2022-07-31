@@ -15,4 +15,5 @@ pub struct TransactionsResponse {
     pub transactions: Vec<TransactionDto>,
     pub total: f32,
     pub tag_data: HashMap<i32, f32>,
+    pub tag_count: HashMap<i32, u32>,
 }
