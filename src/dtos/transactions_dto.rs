@@ -17,3 +17,8 @@ pub struct TransactionsResponse {
     pub tag_data: HashMap<i32, f32>,
     pub tag_count: HashMap<i32, u32>,
 }
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct MultipleTransactionsResponse {
+    pub data: Vec<TransactionsResponse>,
+}

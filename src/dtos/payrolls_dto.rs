@@ -22,3 +22,8 @@ pub struct PayrollsResponse {
     
     // TODO: Per company and category data
 }
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct MultiplePayrollsResponse {
+    pub data: Vec<PayrollsResponse>,
+}
