@@ -1,6 +1,5 @@
 use serde::{Serialize, Deserialize};
 
-
 #[derive(Serialize, Deserialize)]
 pub struct GeneralDataDto {
     pub avg_expenses: f32,
