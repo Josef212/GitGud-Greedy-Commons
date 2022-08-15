@@ -5,3 +5,4 @@ pub mod extra_data_dto;
 pub mod tags_dto;
 pub mod categories_dto;
 pub mod companies_dto;
+pub mod main_summary_dto;
