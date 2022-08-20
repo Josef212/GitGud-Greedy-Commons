@@ -2,7 +2,7 @@ pub mod dtos;
 
 use std::str::FromStr;
 use std::io::Write;
-use chrono::Local;
+use chrono::Utc;
 use env_logger::fmt::Color;
 use log::LevelFilter;
 
@@ -22,7 +22,7 @@ pub fn init_logger(log_level: &String) {
 
             writeln!(buf,
                      "({}) [{}]: {}",
-                     Local::now().format("%Y-%m-%d %H:%M:%S"),
+                     Utc::now().format("%Y-%m-%d %H:%M:%S"),
                      style.value(level),
                      record.args()
             )
