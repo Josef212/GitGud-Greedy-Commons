@@ -7,6 +7,7 @@ pub struct GeneralDataDto {
     pub financial_freedom: f32,
 }
 
+#[derive(Serialize, Deserialize)]
 pub struct AccountDto {
     pub name: String,
     pub description: String,
@@ -14,6 +15,7 @@ pub struct AccountDto {
     pub periodic_in_or_out: Option<f32>,
 }
 
+#[derive(Serialize, Deserialize)]
 pub struct AccountsDataDto {
     pub total: f32,
     pub accounts: Vec<AccountDto>,
